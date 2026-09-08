@@ -4,10 +4,10 @@
 Consolidate and preserve the RexTexh rebrand direction in durable file-based planning artifacts so future sessions can resume with full verified context, including the Vercel/Codex-inspired website direction and Rex's intentional cursor-reactive motion requirements.
 
 ## Next Step
-Homepage implementation is live. Next step: complete real browser/screenshot visual QA when Chromium tooling is available, then polish if needed before moving to the next page.
+Obtain Rex’s visual/copy review of the local rebuild candidate and confirmed booking destination before release.
 
 ## Current Phase
-Phase 10
+Phase 11 — Audit consolidation and reference-led rebuild preparation (in_progress)
 
 ## Phases
 
@@ -79,13 +79,25 @@ Phase 10
 - [x] Write homepage contract tests before production code
 - [x] Scaffold minimal web app suitable for Vercel
 - [x] Implement homepage using `branding/homepage-copy-approved-baseline.md`
-- [x] Implement premium non-flat RexTexh visual language and cursor-reactive hero motion
+- [x] Deliver first implementation attempt; premium design and motion acceptance FAILED in subsequent audit
 - [x] Verify tests, lint/build, production HTTP copy, and reduced-motion/source contracts
 - [x] Commit exact verified implementation locally
 - [x] Push implementation to GitHub/Vercel after Rex confirmed deployment-side effect is allowed
 - [x] Verify canonical Vercel URL serves the approved homepage copy
-- [ ] Complete real-browser screenshot QA after Chromium tooling is available
+- [x] Run subsequent desktop/mobile rendered audit: design rejected; oversized hero, obscured diagram, missing mobile navigation and idle-decay failure confirmed
+- Phase 10 completion is historical delivery only, NOT visual approval.
 - **Status:** complete
+
+### Phase 11: Audit consolidation and reference-led rebuild preparation
+- [x] Record Rex’s rejection and source/rendered failures
+- [x] Enable existing Chromium via explicit executable path
+- [x] Study Vercel partial rendering and user-provided Codex recording
+- [x] Preserve audit/reference findings in repo and active planning lane
+- [x] Recover approved logo raster from surviving brand-story assets; vector production remains separate
+- [x] Rex explicitly authorized ground-up homepage rebuild
+- [x] Complete ground-up local rebuild and desktop/mobile interaction verification
+- [ ] Rex visual/copy approval and confirmed booking route; not release-ready
+- **Status:** in_progress
 
 ## Decisions Made
 | Decision | Rationale |

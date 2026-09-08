@@ -8,9 +8,12 @@
 - Initiative type: Company rebrand and strategic-direction exploration
 
 ## 2. Current status
-- Phase: Strategic foundation established; approved crown-led logo direction locked; continuation normalized into durable planning artifacts
-- Execution status: Strategy work active across positioning, audience, messaging, offers, website architecture, logo direction, and brand-story collateral; no implementation site build or production identity system rollout started
-- Last update: continuation review consolidated the project into a planning lane, confirmed the approved no-Hebrew crown-left / wordmark-right logo from a re-sent user image, and identified the exact remaining gaps to reach a final master brand brief
+- Phase: 11 — Audit consolidation and reference-led rebuild preparation.
+- Execution status: Homepage v1 remains deployed and REJECTED. Ground-up replacement is built and browser-verified LOCALLY, awaiting Rex visual/copy review and confirmed booking destination. See branding/homepage-rebuild-local-review.md.
+- Last update: 2026-09-08 — active Rex planning lane synchronized with audits, Chromium recovery and user-provided Codex recording. See `.planning/2026-09-04-rextexh-rebrand-continuation/` and `branding/codex-recording-reference-findings.md`.
+- Next step: Rex review of local rebuild candidate and booking destination confirmation before release. Approved logo recovered from brand-story assets and used; no deployment performed.
+- Reference direction: Vercel precision + Codex atmosphere and meaningful visuals + actual RexTexh identity; clean is not flat or colorless.
+- Evidence: `branding/homepage-v1-failure-audit.md`, `branding/homepage-v1-rendered-findings.md`, `branding/website-reference-restudy.md`, `branding/codex-recording-reference-findings.md`. These supersede earlier premium/complete design claims.
 
 ## 3. Product / stakeholder direction
 - RexTexh was founded in 2019 as an IT solutions company delivering websites, software, server management, networking, and related technology services on a contract basis.
@@ -35,8 +38,8 @@
 ## 4. Tech stack and architecture
 - Local workspace: Markdown-based project workspace
 - Design workspace: Stitch project created and ready
-- Implementation stack: Unknown until brief
-- Hosting / repo / tooling: GitHub public repo and Vercel project now prepared for development; repo `https://github.com/Rexdomine/rextexh-website`, Vercel project `rexdomines-projects/rextexh-website`, production branch `main`; no website pages or production build authorized yet
+- Implementation stack: Next.js app; homepage implementation exists but visual design is rejected.
+- Hosting / repo / tooling: GitHub public repo and Vercel project now prepared for development; repo `https://github.com/Rexdomine/rextexh-website`, Vercel project `rexdomines-projects/rextexh-website`, production branch `main`; homepage v1 deployed at `https://rextexh-website.vercel.app` but rejected. Replacement build has not started.
 
 ## 5. Workflow rules
 - Use this workspace as the central location for all RexTexh rebrand materials.

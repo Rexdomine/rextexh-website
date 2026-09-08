@@ -288,3 +288,24 @@
 | Vercel auto-deployment failed with project build settings unset | Updated Vercel project settings and manually deployed production successfully |
 | Raw deployment URL did not return app HTML under curl | Canonical alias `https://rextexh-website.vercel.app` was verified and should be used for review |
 
+
+## Session: 2026-09-08 — Audit/reference planning reconciliation
+- Rex requested explicit Rex planning-with-files continuity. Restored existing active lane rather than creating a competing plan.
+- Prior audit/research notes had been saved in deliverables but not yet synchronized into planning; corrected that gap now.
+- Copied four audit/reference Markdown artifacts into branding; preserved media at linked paths.
+- Updated Phase 10 as historical rejected delivery, opened Phase 11, and replaced stale next step with approved-logo recovery before a redesign proposal.
+- Findings now preserve rendered failures, browser recovery/EACCES, partial Vercel rendering, Codex HTTP 403, successful Drive download and sampled recording review, plus exact limits.
+- Updated PROJECT_CONTEXT current status to reject v1 and prohibit treating technical checks as design approval.
+- Validation: active-plan pointer read; existing three planning files restored; date verified by date -u +%F; initial git diff --stat empty. Documentation writes verified by tools; no app edits/tests/deploy required for this continuity-only pass.
+
+## Session: 2026-09-08 — Ground-up homepage rebuild
+- Rex authorized rebuild. Implementation delegated for page/CSS/tests; parent owns asset recovery, planning and real browser verification.
+- Recovered approved logo from brand-story assets; vision verified against locked crown/wordmark description. PIL unavailable in system Python, used ffmpeg conversion; ffprobe confirmed 1441×323.
+- No push/deployment authorized as part of this local validation pass.
+
+### Local rebuild verification
+- Delegated implementation timed out after writing; parent reviewed and found it retained excessive approved-copy density, then replaced page/CSS with concise editorial candidate rather than accepting a technically green result.
+- Parent npm run verify: 4 tests, lint, production build PASS. Chromium 1440/768/390 verified images after scrolling and decoding (earlier lazy footer image false alarm resolved), hashes, no overflow/errors, mobile navigation, movement/idle/exit/reduced-motion behavior.
+- Visual feedback corrected low-contrast bottom annotations and small workflow labels. Final mobile image review found no meaningful overlap/clipping.
+- Evidence and release blockers saved in branding/homepage-rebuild-local-review.md. Booking clarification did not return a booking URL; do not interpret async tool notification as user answer.
+- Remains local and uncommitted. No deployment, no claim of user design approval.
