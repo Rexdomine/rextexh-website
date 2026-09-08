@@ -36,7 +36,7 @@
 - Local workspace: Markdown-based project workspace
 - Design workspace: Stitch project created and ready
 - Implementation stack: Unknown until brief
-- Hosting / repo / tooling: Workspace-preparation pass active; GitHub/Vercel setup may be created for development readiness, but no website pages or production build are authorized yet
+- Hosting / repo / tooling: GitHub public repo and Vercel project now prepared for development; repo `https://github.com/Rexdomine/rextexh-website`, Vercel project `rexdomines-projects/rextexh-website`, production branch `main`; no website pages or production build authorized yet
 
 ## 5. Workflow rules
 - Use this workspace as the central location for all RexTexh rebrand materials.
@@ -70,6 +70,16 @@
 - Clarify content ingestion strategy for future tutorials and learning paths
 
 ## 9. Handoff log
+### 2026-09-08 — GitHub and Vercel workspace preparation completed
+- Created and verified public GitHub repository `Rexdomine/rextexh-website` at `https://github.com/Rexdomine/rextexh-website`
+- Initialized local Git in `/opt/data/projects/rextexh-rebrand`, committed the current planning/brand workspace, and pushed `main`
+- Final verified remote HEAD: `7744fe51d93c47a85bf57d56d7edb43d36a4ae13`
+- Created and locally linked Vercel project `rexdomines-projects/rextexh-website`
+- Verified Vercel Git link: GitHub repo `Rexdomine/rextexh-website`, production branch `main`
+- Vercel token came from `/opt/data/groot-ops/.env`; token value was not printed or committed
+- `.env.local` and `.vercel/` remain ignored local metadata
+- Scope remained workspace preparation only: no website pages, app scaffold, build, Stitch mutation, production rollout, or deploy command was run
+
 ### 2026-09-08 — Homepage copy approved baseline locked
 - Rex approved the revised v2 average-visitor homepage copy as the locked homepage copy baseline
 - Promoted the copy to `branding/homepage-copy-approved-baseline.md`; future homepage design/build work should use that file as the copy source unless Rex explicitly supersedes it

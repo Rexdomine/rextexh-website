@@ -182,3 +182,36 @@
 | Error | Resolution |
 |-------|------------|
 | None | N/A |
+
+## Session: 2026-09-08 — GitHub and Vercel Workspace Preparation
+
+### Current Status
+- **Phase:** 9 - Repository and Vercel Workspace Preparation
+- **Outcome:** Public GitHub repo created, local workspace pushed, and Vercel project linked to GitHub `main`
+
+### Actions Taken
+- Verified GitHub CLI authentication as `Rexdomine`.
+- Verified Vercel CLI was available through `npx --yes vercel`; global `vercel` command was not on PATH.
+- Confirmed `/opt/data/groot-ops/.env` contains `VERCEL_TOKEN` and used it without printing the value.
+- Initialized local Git repository in `/opt/data/projects/rextexh-rebrand` with branch `main`.
+- Created public GitHub repository `Rexdomine/rextexh-website`.
+- Pushed the current planning/branding workspace to GitHub.
+- Created Vercel project `rexdomines-projects/rextexh-website` and verified it is linked to GitHub repo `Rexdomine/rextexh-website` with production branch `main`.
+- Linked the local workspace to Vercel; `.vercel/` and `.env.local` are ignored local metadata.
+- Updated `PROJECT_CONTEXT.md` and `task_plan.md` with the verified setup state.
+
+### Verification Results
+| Check | Expected | Actual | Status |
+|------|----------|--------|--------|
+| GitHub repo | Public repo exists | `https://github.com/Rexdomine/rextexh-website`, visibility `public` | PASS |
+| GitHub branch | `main` pushed | Remote HEAD verified at `7744fe51d93c47a85bf57d56d7edb43d36a4ae13` before final docs commit | PASS |
+| Vercel project | Project exists | `rexdomines-projects/rextexh-website`, project ID `prj_8NPAylUwfVT6wa0zYxxpXMlzyRjE` | PASS |
+| Vercel Git link | Linked to GitHub repo | `Rexdomine/rextexh-website`, production branch `main` | PASS |
+| Secret hygiene | No secret-like tokens in visible Markdown | Scan returned 0 matches for token/private-key patterns | PASS |
+| Scope guard | Prep only | No page scaffold, website implementation, build, deploy command, Stitch mutation, or production rollout | PASS |
+
+### Errors
+| Error | Resolution |
+|-------|------------|
+| Global `vercel` command not found | Retried using `npx --yes vercel`, which succeeded |
+

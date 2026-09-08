@@ -4,7 +4,7 @@
 Consolidate and preserve the RexTexh rebrand direction in durable file-based planning artifacts so future sessions can resume with full verified context, including the Vercel/Codex-inspired website direction and Rex's intentional cursor-reactive motion requirements.
 
 ## Next Step
-Prepare the RexTexh workspace for development only: initialize Git if needed, create/verify a public GitHub repository, push the current planning/brand workspace, and attempt default Vercel project linking without building pages. Do not implement website pages yet.
+Development workspace preparation is complete. Next step: when Rex authorizes implementation, create the actual website app scaffold and build the homepage from `branding/homepage-copy-approved-baseline.md` plus the locked Vercel/Codex motion brief.
 
 ## Current Phase
 Phase 9
@@ -68,11 +68,11 @@ Phase 9
 
 ### Phase 9: Repository and Vercel Workspace Preparation
 - [x] Discover local git/auth/tooling state
-- [ ] Create or reuse public GitHub repository for RexTexh website development
-- [ ] Push current workspace as the initial baseline
-- [ ] Create/link default Vercel project if authenticated credentials are available
-- [ ] Read back GitHub/Vercel state and record verification
-- **Status:** in_progress
+- [x] Create or reuse public GitHub repository for RexTexh website development
+- [x] Push current workspace as the initial baseline
+- [x] Create/link default Vercel project if authenticated credentials are available
+- [x] Read back GitHub/Vercel state and record verification
+- **Status:** complete
 
 ## Decisions Made
 | Decision | Rationale |
@@ -98,6 +98,17 @@ Phase 9
 | GitHub CLI/API → GitHub repo | Groot via authenticated `gh` | GitHub repository metadata, visibility, remote URL | Repo creation can succeed even if push fails | `gh repo view`, public repo metadata |
 | Git push → GitHub branch | Groot via git HTTPS credentials | Remote `main` branch head | Push can fail after local commit | `git ls-remote`, `gh repo view` |
 | Vercel CLI/API → Vercel project | Groot via Vercel auth/token if available | Vercel project and Git link | Vercel project can exist even if deploy/build not triggered | `vercel project ls/inspect` or CLI output |
+
+## Workspace Prep Verification
+| Check | Result |
+|-------|--------|
+| GitHub repo | `https://github.com/Rexdomine/rextexh-website` |
+| Visibility | Public |
+| Default branch | `main` |
+| Remote HEAD | `7744fe51d93c47a85bf57d56d7edb43d36a4ae13` |
+| Vercel project | `rexdomines-projects/rextexh-website` |
+| Vercel Git link | GitHub `Rexdomine/rextexh-website`, production branch `main` |
+| Scope guard | No website pages scaffolded or built; no deployment command run |
 
 ## Errors Encountered
 | Error | Resolution |
