@@ -73,7 +73,7 @@
 ### 2026-09-08 — GitHub and Vercel workspace preparation completed
 - Created and verified public GitHub repository `Rexdomine/rextexh-website` at `https://github.com/Rexdomine/rextexh-website`
 - Initialized local Git in `/opt/data/projects/rextexh-rebrand`, committed the current planning/brand workspace, and pushed `main`
-- Final verified remote HEAD: `7744fe51d93c47a85bf57d56d7edb43d36a4ae13`
+- Final remote `main` branch verified with `git ls-remote --heads origin main` during closeout
 - Created and locally linked Vercel project `rexdomines-projects/rextexh-website`
 - Verified Vercel Git link: GitHub repo `Rexdomine/rextexh-website`, production branch `main`
 - Vercel token came from `/opt/data/groot-ops/.env`; token value was not printed or committed

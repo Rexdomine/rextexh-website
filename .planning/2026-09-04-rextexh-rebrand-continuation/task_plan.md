@@ -105,7 +105,7 @@ Phase 9
 | GitHub repo | `https://github.com/Rexdomine/rextexh-website` |
 | Visibility | Public |
 | Default branch | `main` |
-| Remote HEAD | `c74fe24be9f2a7c0b400c5def9b84597d440a73d` |
+| Remote HEAD | Verified with `git ls-remote --heads origin main` during closeout |
 | Vercel project | `rexdomines-projects/rextexh-website` |
 | Vercel Git link | GitHub `Rexdomine/rextexh-website`, production branch `main` |
 | Scope guard | No website pages scaffolded or built; no deployment command run |

@@ -204,7 +204,7 @@
 | Check | Expected | Actual | Status |
 |------|----------|--------|--------|
 | GitHub repo | Public repo exists | `https://github.com/Rexdomine/rextexh-website`, visibility `public` | PASS |
-| GitHub branch | `main` pushed | Remote HEAD verified at `c74fe24be9f2a7c0b400c5def9b84597d440a73d` | PASS |
+| GitHub branch | `main` pushed | Remote HEAD verified with `git ls-remote --heads origin main` during closeout | PASS |
 | Vercel project | Project exists | `rexdomines-projects/rextexh-website`, project ID `prj_8NPAylUwfVT6wa0zYxxpXMlzyRjE` | PASS |
 | Vercel Git link | Linked to GitHub repo | `Rexdomine/rextexh-website`, production branch `main` | PASS |
 | Secret hygiene | No secret-like tokens in visible Markdown | Scan returned 0 matches for token/private-key patterns | PASS |
