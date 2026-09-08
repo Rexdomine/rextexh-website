@@ -70,6 +70,17 @@
 - Clarify content ingestion strategy for future tutorials and learning paths
 
 ## 9. Handoff log
+### 2026-09-08 — Homepage implementation deployed
+- Homepage implementation was pushed to GitHub `main` after Rex approved the push/deployment side effect
+- GitHub repo remains `https://github.com/Rexdomine/rextexh-website`
+- Initial Vercel Git auto-deployment failed because the project had been created before app scaffolding and still had framework/build/install settings unset
+- Fixed Vercel project settings to `framework: nextjs`, `buildCommand: npm run build`, and `installCommand: npm install`
+- Deployed the exact current tree to Vercel production; Vercel reported deployment `dpl_DbbFvkxZwLr4PzdySDx7QL6gSSPL` READY
+- Canonical public URL verified by HTTP: `https://rextexh-website.vercel.app`
+- Verified canonical HTML contains the approved homepage headline, subheadline, booking reassurance, final CTA, footer line, and hero motion class markers
+- Raw per-deployment URL returned Vercel/provider content instead of the app HTML, so use the canonical alias for review
+- Browser visual QA remains pending because browser harness could not start and Playwright Chromium installation timed out twice
+
 ### 2026-09-08 — Homepage implementation completed locally
 - Rex authorized building the first page: the homepage
 - Implemented a minimal Vercel-ready Next.js app with the homepage at `/`

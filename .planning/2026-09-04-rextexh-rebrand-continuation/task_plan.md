@@ -4,7 +4,7 @@
 Consolidate and preserve the RexTexh rebrand direction in durable file-based planning artifacts so future sessions can resume with full verified context, including the Vercel/Codex-inspired website direction and Rex's intentional cursor-reactive motion requirements.
 
 ## Next Step
-Homepage implementation is complete locally and committed. Next step: Rex must confirm whether to push `main` to GitHub, because the GitHub repo is linked to Vercel and a push may trigger deployment.
+Homepage implementation is live. Next step: complete real browser/screenshot visual QA when Chromium tooling is available, then polish if needed before moving to the next page.
 
 ## Current Phase
 Phase 10
@@ -82,8 +82,10 @@ Phase 10
 - [x] Implement premium non-flat RexTexh visual language and cursor-reactive hero motion
 - [x] Verify tests, lint/build, production HTTP copy, and reduced-motion/source contracts
 - [x] Commit exact verified implementation locally
-- [ ] Push implementation to GitHub/Vercel after Rex confirms deployment-side effect is allowed
-- **Status:** in_progress
+- [x] Push implementation to GitHub/Vercel after Rex confirmed deployment-side effect is allowed
+- [x] Verify canonical Vercel URL serves the approved homepage copy
+- [ ] Complete real-browser screenshot QA after Chromium tooling is available
+- **Status:** complete
 
 ## Decisions Made
 | Decision | Rationale |
@@ -102,6 +104,7 @@ Phase 10
 | Lock `homepage-copy-approved-baseline.md` as the homepage copy source | Rex explicitly approved the revised v2 homepage copy |
 | Limit prior workspace-prep pass to preparation only | Rex explicitly said no page building yet for that pass |
 | Homepage is now authorized as the first implemented page | Rex explicitly requested building out the first page, the homepage |
+| Canonical public URL for homepage review | `https://rextexh-website.vercel.app` serves the implemented homepage |
 
 ## External Setup Boundary Map
 | Boundary | Initiator | Authoritative State | Independent Success / Risk | Read-back Proof |

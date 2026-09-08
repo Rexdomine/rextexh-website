@@ -256,3 +256,35 @@
 | Browser harness could not start because no Chromium-family browser was running | Tried Playwright Chromium installation; install timed out, so local HTTP/build evidence is complete but browser visual QA remains pending |
 | Pushing to GitHub may trigger Vercel deployment because the repo is linked to Vercel `main` | Stopped before push and left local commit ahead of origin pending Rex confirmation |
 
+## Session: 2026-09-08 — Homepage Push and Vercel Deployment
+
+### Current Status
+- **Phase:** 10 - Homepage Implementation
+- **Outcome:** Homepage pushed to GitHub and verified live on the canonical Vercel URL
+
+### Actions Taken
+- Received Rex confirmation to push GitHub `main` even though Vercel might auto-deploy.
+- Pushed local implementation commit `81aaba97b942b9f1e433e572665d3d5aea873842` to GitHub `main`.
+- Verified local and remote Git heads matched after push.
+- Vercel Git auto-deployment triggered but failed because project settings still had no framework/build/install command from the earlier pre-scaffold setup.
+- Patched Vercel project settings to `framework: nextjs`, `buildCommand: npm run build`, and `installCommand: npm install`.
+- Ran `npx --yes vercel deploy --prod --yes --token "$VERCEL_TOKEN"` from the project root.
+- Vercel built Next.js 16.3.4 successfully and reported deployment READY.
+- Verified canonical public URL `https://rextexh-website.vercel.app` returns HTTP 200 and contains approved homepage copy.
+
+### Verification Results
+| Check | Expected | Actual | Status |
+|------|----------|--------|--------|
+| GitHub push | Local commit on remote `main` | Local and remote HEAD matched at `81aaba97b942b9f1e433e572665d3d5aea873842` before docs follow-up | PASS |
+| Vercel settings | Next.js project settings present | `framework: nextjs`, `buildCommand: npm run build`, `installCommand: npm install` | PASS |
+| Vercel deployment | Production deployment READY | `dpl_DbbFvkxZwLr4PzdySDx7QL6gSSPL`, target `production`, READY | PASS |
+| Canonical URL | Public app HTML served | `https://rextexh-website.vercel.app` returned HTTP 200 and approved copy | PASS |
+| Raw deployment URL | App HTML preferred | Raw deployment URL returned Vercel/provider content, not app copy | CAVEAT |
+| Browser visual QA | Rendered screenshot/console QA | Still blocked by missing Chromium/browser harness | BLOCKED |
+
+### Errors
+| Error | Resolution |
+|-------|------------|
+| Vercel auto-deployment failed with project build settings unset | Updated Vercel project settings and manually deployed production successfully |
+| Raw deployment URL did not return app HTML under curl | Canonical alias `https://rextexh-website.vercel.app` was verified and should be used for review |
+
