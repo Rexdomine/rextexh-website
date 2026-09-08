@@ -70,6 +70,17 @@
 - Clarify content ingestion strategy for future tutorials and learning paths
 
 ## 9. Handoff log
+### 2026-09-08 — Homepage implementation completed locally
+- Rex authorized building the first page: the homepage
+- Implemented a minimal Vercel-ready Next.js app with the homepage at `/`
+- Homepage uses the approved copy baseline from `branding/homepage-copy-approved-baseline.md`
+- Implemented premium RexTexh visual language with navy/charcoal/gold authority, soft AI gradients, technical panels, workflow console, capability sections, and final Book a Call conversion
+- Implemented cursor-reactive hero hooks: pointer-driven CSS variables, binary/code particles, spotlight/proximity layer, and Assess / Build / Automate / Improve system diagram labels
+- Added reduced-motion CSS fallback and source contract tests
+- Verification run locally: `npm test`, `npm run lint`, `npm run build`, `npm audit --audit-level=high`, dev/prod HTTP copy checks
+- Browser harness QA was blocked because no Chromium-family browser was running; Playwright Chromium install timed out twice. Local production HTTP and build verification passed, but screenshot/real-browser visual QA remains pending until browser tooling is available
+- Local commit created; push to `main` is pending Rex confirmation because the repo is linked to Vercel and may deploy automatically
+
 ### 2026-09-08 — GitHub and Vercel workspace preparation completed
 - Created and verified public GitHub repository `Rexdomine/rextexh-website` at `https://github.com/Rexdomine/rextexh-website`
 - Initialized local Git in `/opt/data/projects/rextexh-rebrand`, committed the current planning/brand workspace, and pushed `main`

@@ -1,0 +1,3 @@
+{
+  "note": "ESLint 9 uses eslint.config.mjs. This file is retained only as historical context and is not used by the lint command."
+}

@@ -215,3 +215,44 @@
 |-------|------------|
 | Global `vercel` command not found | Retried using `npx --yes vercel`, which succeeded |
 
+## Session: 2026-09-08 — Homepage Implementation Local Build
+
+### Current Status
+- **Phase:** 10 - Homepage Implementation
+- **Outcome:** Homepage implemented, verified locally, and committed locally; push/deployment pending Rex confirmation
+
+### Actions Taken
+- Wrote RED homepage contract tests before creating production homepage files.
+- Confirmed RED failure from missing `app/page.tsx`, `app/globals.css`, and `package.json`.
+- Scaffolded a minimal Vercel-ready Next.js app.
+- Implemented the homepage at `/` using `branding/homepage-copy-approved-baseline.md`.
+- Built the RexTexh visual direction: premium navy/charcoal/gold palette, soft AI gradients, technical hero diagram, workflow console, capability rows, proof cards, learning bridge, and Book a Call conversion.
+- Implemented cursor-reactive hero motion hooks with pointer-driven CSS variables, binary/code particles, spotlight/proximity illumination, and Assess / Build / Automate / Improve diagram labels.
+- Added reduced-motion handling in CSS.
+- Upgraded to Next.js `16.3.4` after npm audit showed older Next/PostCSS vulnerability paths.
+- Fixed lint issue by using Next `Link` for internal root links.
+- Fixed Next Turbopack root warning by setting `turbopack.root` in `next.config.mjs`.
+- Verified local dev HTTP and local production HTTP responses contain the approved homepage copy.
+
+### Verification Results
+| Check | Expected | Actual | Status |
+|------|----------|--------|--------|
+| RED tests | Fail before implementation for missing app files | `RED_CONFIRMED: homepage/app implementation missing as expected` | PASS |
+| Contract tests | Approved copy, motion hooks, homepage-only scope | `npm test` passed: 4 tests, 0 failures | PASS |
+| Lint | No ESLint issues | `npm run lint` passed | PASS |
+| Build | Static `/` builds successfully | `npm run build` passed on Next.js 16.3.4 | PASS |
+| Audit | No high vulnerabilities | `npm audit --audit-level=high` passed after Next 16 upgrade | PASS |
+| Dev HTTP | Approved headline/body in response | `curl http://127.0.0.1:3027` found required copy | PASS |
+| Production HTTP | Approved headline/body in response | `curl http://127.0.0.1:3028` found required copy | PASS |
+| Scope | Homepage only | No Services/Learn/About/Book-a-Call route files created | PASS |
+| Browser visual QA | Real rendered browser verification | Browser harness failed; Playwright Chromium install timed out twice | BLOCKED |
+
+### Errors
+| Error | Resolution |
+|-------|------------|
+| Next 14/15 dependency sets showed high audit vulnerabilities | Upgraded to Next.js 16.3.4 and audit high gate passed |
+| ESLint reported raw root anchors | Replaced brand root anchors with Next `Link` |
+| Next Turbopack warned about outer repo root detection | Added explicit `turbopack.root` to `next.config.mjs` |
+| Browser harness could not start because no Chromium-family browser was running | Tried Playwright Chromium installation; install timed out, so local HTTP/build evidence is complete but browser visual QA remains pending |
+| Pushing to GitHub may trigger Vercel deployment because the repo is linked to Vercel `main` | Stopped before push and left local commit ahead of origin pending Rex confirmation |
+

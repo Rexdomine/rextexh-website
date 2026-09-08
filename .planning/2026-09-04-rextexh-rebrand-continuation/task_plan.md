@@ -4,10 +4,10 @@
 Consolidate and preserve the RexTexh rebrand direction in durable file-based planning artifacts so future sessions can resume with full verified context, including the Vercel/Codex-inspired website direction and Rex's intentional cursor-reactive motion requirements.
 
 ## Next Step
-Development workspace preparation is complete. Next step: when Rex authorizes implementation, create the actual website app scaffold and build the homepage from `branding/homepage-copy-approved-baseline.md` plus the locked Vercel/Codex motion brief.
+Homepage implementation is complete locally and committed. Next step: Rex must confirm whether to push `main` to GitHub, because the GitHub repo is linked to Vercel and a push may trigger deployment.
 
 ## Current Phase
-Phase 9
+Phase 10
 
 ## Phases
 
@@ -74,6 +74,17 @@ Phase 9
 - [x] Read back GitHub/Vercel state and record verification
 - **Status:** complete
 
+### Phase 10: Homepage Implementation
+- [x] Confirm Rex authorized homepage build as the first page
+- [x] Write homepage contract tests before production code
+- [x] Scaffold minimal web app suitable for Vercel
+- [x] Implement homepage using `branding/homepage-copy-approved-baseline.md`
+- [x] Implement premium non-flat RexTexh visual language and cursor-reactive hero motion
+- [x] Verify tests, lint/build, production HTTP copy, and reduced-motion/source contracts
+- [x] Commit exact verified implementation locally
+- [ ] Push implementation to GitHub/Vercel after Rex confirms deployment-side effect is allowed
+- **Status:** in_progress
+
 ## Decisions Made
 | Decision | Rationale |
 |----------|-----------|
@@ -89,7 +100,8 @@ Phase 9
 | Remove Founder / Brand Bridge from homepage | Rex said the homepage does not need that section; About can carry deeper founder/brand relationship content |
 | Add average-visitor clarity layer before final copy | Current copy is strategically sound but still too abstract for a non-technical business visitor |
 | Lock `homepage-copy-approved-baseline.md` as the homepage copy source | Rex explicitly approved the revised v2 homepage copy |
-| Limit current pass to workspace preparation only | Rex explicitly said no page building yet |
+| Limit prior workspace-prep pass to preparation only | Rex explicitly said no page building yet for that pass |
+| Homepage is now authorized as the first implemented page | Rex explicitly requested building out the first page, the homepage |
 
 ## External Setup Boundary Map
 | Boundary | Initiator | Authoritative State | Independent Success / Risk | Read-back Proof |
