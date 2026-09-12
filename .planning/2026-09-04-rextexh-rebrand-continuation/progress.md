@@ -318,5 +318,5 @@ Rex explicitly requested push/deploy for review. npm run verify passed (4 tests,
 - Reconciled `PROJECT_CONTEXT.md` so its current status and next step no longer contradict the verified deployment record.
 - Re-ran `npm run verify`: 4 tests passed, ESLint passed, and Next.js 16.3.4 production build passed. `git diff --check` passed.
 - Confirmed local `main` and `origin/main` still match exact head `25065e6285628407eed2b2e2c16d2c89b65b1897` before publishing the durable context update.
-- Canonical URL read-back: `https://rextexh-website.vercel.app` returned HTTP 200; live app contains RexTexh and booking content. The exact headline string check was not used because the deployed copy uses the rebuilt candidate’s current wording.
-- Next: commit/push the context reconciliation, trigger a fresh Vercel production deployment, and verify the canonical alias against that deployment.
+- Fresh Vercel production deployment `dpl_C9owvKyhuchXfxDxuQ9Cqspp8WxL` completed READY for the published head; canonical alias `https://rextexh-website.vercel.app` returned HTTP 200 and contains RexTexh and booking content. The raw deployment URL also returned HTTP 200 but its streamed Next/Vercel payload did not expose those plain-text markers; canonical alias is the review URL.
+- Next: Rex visual/copy review of the deployed rebuild and booking destination confirmation before release. Deployment and handoff evidence are complete; no further implementation is authorized without Rex feedback.
