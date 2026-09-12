@@ -9,9 +9,9 @@
 
 ## 2. Current status
 - Phase: 11 — Audit consolidation and reference-led rebuild preparation.
-- Execution status: Homepage v1 remains deployed and REJECTED. Ground-up replacement is built and browser-verified LOCALLY, awaiting Rex visual/copy review and confirmed booking destination. See branding/homepage-rebuild-local-review.md.
+- Execution status: Ground-up replacement deployed to https://rextexh-website.vercel.app after Rex authorized push/deployment for review. Vercel READY and canonical browser read-back verified. Awaiting visual/copy feedback and confirmed booking destination; not a claim of final approval.
 - Last update: 2026-09-08 — active Rex planning lane synchronized with audits, Chromium recovery and user-provided Codex recording. See `.planning/2026-09-04-rextexh-rebrand-continuation/` and `branding/codex-recording-reference-findings.md`.
-- Next step: Rex review of local rebuild candidate and booking destination confirmation before release. Approved logo recovered from brand-story assets and used; no deployment performed.
+- Next step: Rex visual/copy review of the deployed rebuild and booking destination confirmation before release. Approved logo recovered from brand-story assets and used; current deployment is review-only, not final approval or booking completion.
 - Reference direction: Vercel precision + Codex atmosphere and meaningful visuals + actual RexTexh identity; clean is not flat or colorless.
 - Evidence: `branding/homepage-v1-failure-audit.md`, `branding/homepage-v1-rendered-findings.md`, `branding/website-reference-restudy.md`, `branding/codex-recording-reference-findings.md`. These supersede earlier premium/complete design claims.
 

@@ -309,3 +309,14 @@
 - Visual feedback corrected low-contrast bottom annotations and small workflow labels. Final mobile image review found no meaningful overlap/clipping.
 - Evidence and release blockers saved in branding/homepage-rebuild-local-review.md. Booking clarification did not return a booking URL; do not interpret async tool notification as user answer.
 - Remains local and uncommitted. No deployment, no claim of user design approval.
+
+## 2026-09-08 — Authorized Vercel review deployment
+Rex explicitly requested push/deploy for review. npm run verify passed (4 tests, lint, build); npm audit reported zero vulnerabilities. Pushed rebuild to main and verified remote SHA equality. Vercel production dpl_8gTtFQn6ep2nmgJsw5Lm4LUw2xbx READY for implementation commit 25065e6285628407eed2b2e2c16d2c89b65b1897. Canonical alias Chromium check: HTTP 200, new headline, real logo decoded, honest booking-pending notice. Screenshot /opt/data/deliverables/rextexh-rebuild/live-desktop.png. Deployment is for user review, not design approval or booking completion.
+
+## 2026-09-12 — Reconciled deployment handoff
+- Restored RexTexh context from the active Rex planning-with-files lane and session lineage after session reset.
+- Reconciled `PROJECT_CONTEXT.md` so its current status and next step no longer contradict the verified deployment record.
+- Re-ran `npm run verify`: 4 tests passed, ESLint passed, and Next.js 16.3.4 production build passed. `git diff --check` passed.
+- Confirmed local `main` and `origin/main` still match exact head `25065e6285628407eed2b2e2c16d2c89b65b1897` before publishing the durable context update.
+- Canonical URL read-back: `https://rextexh-website.vercel.app` returned HTTP 200; live app contains RexTexh and booking content. The exact headline string check was not used because the deployed copy uses the rebuilt candidate’s current wording.
+- Next: commit/push the context reconciliation, trigger a fresh Vercel production deployment, and verify the canonical alias against that deployment.
